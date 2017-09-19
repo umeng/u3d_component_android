@@ -1,0 +1,2 @@
+include ':app', ':UMUnity3DDemo', ':push', ':social'
+project(':UMUnity3DDemo').projectDir = new File('UMUnityDemo')
