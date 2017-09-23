@@ -111,6 +111,7 @@ public class UMSocialSDK {
 					int i = 0;
 					for (String key :arg2.keySet()) {
 						i++;
+
 						keys = keys+key;
 						if (i<=(arg2.keySet().size()-1)) {
 							keys=keys+",";
@@ -119,6 +120,9 @@ public class UMSocialSDK {
 					int j = 0;
 					for (String value :arg2.values()) {
 						j++;
+						if (value.contains(",")){
+							value = value.replace(","," ");
+						}
 						values = values+value;
 						if (j<=(arg2.values().size()-1)) {
 							values=values+",";
