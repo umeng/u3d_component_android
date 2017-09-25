@@ -23,6 +23,7 @@ dependencies {
 	compile fileTree(include: ['*.jar'], dir: 'libs')
 	compile project(':push')
 	compile project(':social')
+
 }
 
 android {
