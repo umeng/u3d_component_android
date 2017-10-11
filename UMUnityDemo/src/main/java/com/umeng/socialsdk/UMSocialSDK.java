@@ -36,20 +36,78 @@ import com.unity3d.player.*;
 
 public class UMSocialSDK {
     static Activity mActivity;
-   private static SHARE_MEDIA[] platformlist = {SHARE_MEDIA.SINA,
-		    /// 微信
-		   SHARE_MEDIA.WEIXIN,
-		    /// 微信朋友圈
-		   SHARE_MEDIA.WEIXIN_CIRCLE,
-		    /// QQ
-		   SHARE_MEDIA.QQ,
-		    /// QQ空间
-		   SHARE_MEDIA.QZONE,
-		    /// fb
-		   SHARE_MEDIA.FACEBOOK,
-		   //twitter
-		   SHARE_MEDIA.TWITTER
-		   };
+   private static SHARE_MEDIA[] platformlist = {
+
+	   SHARE_MEDIA.QQ,
+
+	   SHARE_MEDIA.SINA,
+
+	   SHARE_MEDIA.WEIXIN,
+
+
+	   SHARE_MEDIA.WEIXIN_CIRCLE,
+
+	   SHARE_MEDIA.QZONE,
+
+	   SHARE_MEDIA.EMAIL,
+
+	   SHARE_MEDIA.SMS,
+
+	   SHARE_MEDIA.FACEBOOK,
+
+	   SHARE_MEDIA.TWITTER,
+
+	   SHARE_MEDIA.WEIXIN_FAVORITE,
+
+	   SHARE_MEDIA.GOOGLEPLUS,
+
+	   SHARE_MEDIA.RENREN,
+
+	   SHARE_MEDIA.TENCENT,
+
+	   SHARE_MEDIA.DOUBAN,
+
+	   SHARE_MEDIA.FACEBOOK_MESSAGER,
+
+	   SHARE_MEDIA.YIXIN,
+
+	   SHARE_MEDIA.YIXIN_CIRCLE,
+
+	   SHARE_MEDIA.INSTAGRAM,
+
+	   SHARE_MEDIA.PINTEREST,
+
+	   SHARE_MEDIA.EVERNOTE,
+
+	   SHARE_MEDIA.POCKET,
+
+	   SHARE_MEDIA.LINKEDIN,
+
+	   SHARE_MEDIA.FOURSQUARE,
+
+	   SHARE_MEDIA.YNOTE,
+
+	   SHARE_MEDIA.WHATSAPP,
+
+	   SHARE_MEDIA.LINE,
+
+	   SHARE_MEDIA.FLICKR,
+
+	   SHARE_MEDIA.TUMBLR,
+
+	   SHARE_MEDIA.ALIPAY,
+
+	   SHARE_MEDIA.KAKAO,
+
+	   SHARE_MEDIA.DROPBOX,
+
+	   SHARE_MEDIA.VKONTAKTE,
+
+	   SHARE_MEDIA.DINGTALK,
+
+	   SHARE_MEDIA.MORE,
+
+   };
  
     private static UMAuthListener mAuthListener;
     private static UMShareListener mShareListener;
