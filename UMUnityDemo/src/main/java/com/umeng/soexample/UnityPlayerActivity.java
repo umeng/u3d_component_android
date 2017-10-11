@@ -1,5 +1,6 @@
 package com.umeng.soexample;
 
+import com.umeng.socialize.UMShareAPI;
 import com.unity3d.player.*;
 import android.app.Activity;
 import android.content.Intent;
@@ -97,6 +98,12 @@ public class UnityPlayerActivity extends Activity
         if (event.getAction() == KeyEvent.ACTION_MULTIPLE)
             return mUnityPlayer.injectEvent(event);
         return super.dispatchKeyEvent(event);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        UMShareAPI.get(this).onActivityResult(requestCode,resultCode,data);
     }
 
     // Pass any events not handled by (unfocused) views straight to UnityPlayer
