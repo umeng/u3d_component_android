@@ -47,26 +47,31 @@ public class UMPushSDK {
 
 
     public static void addTag(String tag, final RemainListener listener) {
-		Log.e("xxxxxx","addTag");
+		Log.e("xxxxxx","addTag = "+tag);
 		mPushAgent.getTagManager().addTags(new TagManager.TCallBack() {
 			@Override
 			public void onMessage(final boolean isSuccess, final ITagManager.Result result) {
 				if (isSuccess) {
+					Log.e("xxxxxx","11");
 					listener.onRemain(SUCCESS, result.remain);	
 				} else {
+					Log.e("xxxxxx","22");
 					listener.onRemain(ERROR, 0);	
 				}
 			}
 		}, tag);
 	}
 	public static void deleteTag(String tag, final RemainListener listener) {
+		Log.e("xxxxxx","deleteTag = "+tag);
 		mPushAgent.getTagManager().deleteTags(new TagManager.TCallBack() {
 			@Override
 			public void onMessage(boolean isSuccess, final ITagManager.Result result) {
 				
 				if (isSuccess) {
+					Log.e("xxxxxx","11");
 					listener.onRemain(SUCCESS, result.remain);	
 				} else {
+					Log.e("xxxxxx","22");
 					listener.onRemain(ERROR, 0);	
 				}
 			}
