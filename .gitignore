@@ -9,3 +9,4 @@
 .externalNativeBuild
 /UMUnityDemo/build/*
 /common/*
+/.idea/*
